@@ -29,7 +29,8 @@ Route::get('/order', function () {
     }
     return view('order');
 });
-Route::get('report',[UserController::class,'retrive']);
+Route::get('report',[UserController::class,'piechart']);
+Route::get('barchart',[UserController::class,'barchart']);
 
 // Route::get('/report', function () {
 //     if(!session()->has('data')){

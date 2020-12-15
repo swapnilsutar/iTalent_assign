@@ -52,8 +52,10 @@
         function drawChart()
         {
             var data = google.visualization.arrayToDataTable(analytics);
+
             var options = {
-                title : 'Product Sold By Quantity'
+                title : 'Product Sold By Quantity',
+                is3d:true,
             };
             var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
             chart.draw(data, options);

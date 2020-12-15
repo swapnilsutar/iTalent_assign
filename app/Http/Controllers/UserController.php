@@ -33,7 +33,7 @@ class UserController extends Controller
 
     }
 
-     function retrive(){
+     function piechart(){
 
         // $data = Sale::select('product',DB::raw('sum(quantity) as quantity'))
         //             ->groupBy('product')
@@ -58,7 +58,7 @@ class UserController extends Controller
 
         foreach($data as $key => $value)
         {
-         $array[++$key] = [$value->product, $value->quantity];
+         $array[++$key] = [$value->product, (int)$value->quantity];
         }
         
         // return $array;
@@ -67,6 +67,19 @@ class UserController extends Controller
         // return view('report',['dataa'=>$data]);
         
         // return view('report')->with('products',$da);
+
+    }
+
+    function barchart(){
+
+        $sales = Sale::select(
+            DB::raw('product as product'),
+            DB::raw('sum(quantity) as quantity'))
+        ->groupBy('product')
+        ->get();
+
+        return view('barchart');
+
 
     }
 
