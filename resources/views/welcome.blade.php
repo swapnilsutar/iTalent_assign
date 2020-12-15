@@ -13,6 +13,7 @@
 
     <div class="container">
 
+        <h1 class="text-center mt-5">iTalent Restaurant</h1>
         <h1 class="text-center mt-5">LOGIN PAGE</h1>
 
         <div class="row box">
@@ -36,6 +37,10 @@
 
     </div>
 
+
+    <footer>
+        Copyright &#169; 2020 : &nbsp; <a href="http://swapnilsutar.netlify.com/" target="_blank">  Swapnil Sutar </a> 
+    </footer>
     
 
 

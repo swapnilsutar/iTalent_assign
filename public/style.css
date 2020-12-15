@@ -31,3 +31,11 @@ table tr,td{
     text-align: center;
     padding: 15px;
 }
+
+footer{
+    margin-top: 190px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

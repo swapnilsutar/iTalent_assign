@@ -71,15 +71,21 @@ class UserController extends Controller
     }
 
     function barchart(){
+        $data = DB::table('sales')->select(
+                    DB::raw('product as product'),
+                    DB::raw('sum(quantity) as quantity'))
+                ->groupBy('product')
+                ->get();
 
-        $sales = Sale::select(
-            DB::raw('product as product'),
-            DB::raw('sum(quantity) as quantity'))
-        ->groupBy('product')
-        ->get();
 
-        return view('barchart');
+        $array[] = ['product', 'quantity' ];
 
+        foreach($data as $key => $value)
+        {
+        $array[++$key] = [$value->product, (int)$value->quantity];
+        }
+
+        return view('barchart')->with('dataa', json_encode($array));
 
     }
 
