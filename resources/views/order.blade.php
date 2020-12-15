@@ -95,21 +95,17 @@
 
 <script>
     function cook(val){
-        var x = document.getElementById("product").value;
-
+        var x = document.getElementById("product").value;   
         if( x == 'tea' || x == 'coffee'){
             var price = 10;
         }
         else if( x == 'samosa' || x == 'cake'){
             var price = 15;
         }
-
         valNum = parseFloat(val);
 
         document.getElementById("outputme").innerHTML=valNum*price;
         document.getElementById("outputme").value=valNum*price;
-
-
     }
 </script>
 
