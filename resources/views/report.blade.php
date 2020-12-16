@@ -34,7 +34,7 @@
                 <a class="nav-link active" href="report">Piechart</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="barchart">Barchart</a>
+                <a class="nav-link" href="barchart">BarGraph</a>
             </li>
             <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

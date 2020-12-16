@@ -32,7 +32,7 @@
                     <a class="nav-link" href="report">Piechart</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="barchart">Barchart</a>
+                    <a class="nav-link active" href="barchart">BarGraph</a>
                 </li>
 
                     <li class="nav-item dropdown">
